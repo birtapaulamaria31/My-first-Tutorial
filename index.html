@@ -12,10 +12,36 @@
                 <div id="avatar"></div>
                 <figcaption>Jack Sparrow</figcaption>
             </figure>
+
             <img src="images/menu.svg">
+            <nav>
+                <ul >
+                    <li>  <a href="#">Home</a> </li>
+                    <li>  <a href="#">About me</a> </li>
+                    <li>  <a href="#">Portofolio</a> </li>
+                    <li>  <a href="#">Contact</a> </li>
+                </ul>
+            </nav>
         </aside>
         <main>
+            <h1>Hi, I'm a cool designer</h1>
+            <p>I'm a designer of things and I'm learning this new awesome skill. You'll see how many possibilities of creatives ideas I can do and after that put on the browser. </p>
 
+            <a href='#' class='cta'>my portofolio</a>
         </main>
+
+        <script>
+            (function() {
+                var menu = document.querySelector('ul'),
+                    menulink = document.querySelector('img');
+
+                menulink.addEventListener('click',function(e){
+                    menu.classList.toggle('active');
+                    e.preventDefault();
+                });
+            })();
+        </script>
+
+
     </body>
 </html>
